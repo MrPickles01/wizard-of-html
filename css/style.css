@@ -6,11 +6,14 @@ body{
     background: rgb(250, 225, 0);
     height: stretch;
     max-width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .main-block{
     background: white;
     margin: 2em;
+    max-width: 75%;
 }
 
 .main-content{
@@ -23,22 +26,19 @@ body{
 }
 
 .main-content main{
-    flex: 3 70%;
+    flex: 3 12.5em;
 }
 
 .main-content aside{
     flex: 1 30%;
 }
 
-.div-img-hero{
-    margin: auto;
-    padding: 0px 0px;
-    margin: 0px 0px;
-}
 .img-hero{
     max-width: 100%;
     padding: 0px, 0px;
     padding: 0px, 0px;
+    height: auto;
+    display: block;
 }
  nav{
     background: rgb(255, 153, 0)
@@ -67,9 +67,6 @@ footer{
     text-align: center;
 }
 
-footer p{
-    margin: 0px 0px;
-}
 h1, h2, h3{
     color: firebrick;
 }
@@ -77,4 +74,26 @@ h1, h2, h3{
 h1{
     text-align: center;
     background: coral;
+}
+
+h2,
+h3{
+    padding: .3em;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    flex-direction: row;
+}
+ 
+.flex-item{
+    max-width: 100%;
+}
+
+.item-img{
+    max-width: 100%;
 }
