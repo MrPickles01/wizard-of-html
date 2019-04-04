@@ -78,3 +78,18 @@ h1{
     text-align: center;
     background: coral;
 }
+
+.flex-container{
+    display: flex;
+    width: 100%;
+}
+
+.flex-item{
+    width: 30%;
+
+}
+
+.item-img{
+    margin: auto;
+    
+}
