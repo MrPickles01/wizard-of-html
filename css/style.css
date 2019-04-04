@@ -15,8 +15,22 @@ body{
 
 h1{
     text-align: center;
-    background: coral;
+    background: coral url(../img/gettyimages-121652862.jpg) no-repeat center /
+    cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
     margin: 0px;
+}
+
+h1 a{
+    color: white;
+    font-size: 1.5em;
+    background:rgba(255, 166, 0, 0.856);
+    text-decoration: none;
+    text-shadow: black 5px 5px 3px;
+    padding: 5px;
 }
 
 nav{
@@ -38,7 +52,13 @@ nav li{
 }
 
 ul a{
-    color: darkcyan;
+    background:darkcyan;
+    color: white;
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    
 }
 
 ul a:hover{
