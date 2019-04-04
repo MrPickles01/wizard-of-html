@@ -1,56 +1,40 @@
+/* general setting --------------- */
 *{
     box-sizing: border-box;
-    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 body{
     background: rgb(250, 225, 0);
-    height: stretch;
     max-width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.main-block{
-    background: white;
-    margin: 2em;
-    max-width: 75%;
+/* header ------------------------ */
+
+h1{
+    text-align: center;
+    background: coral;
+    margin: 0px;
 }
 
-.main-content{
-    padding: 0px 1em;
-    display: flex;
-    width: 100%;
-    background: rgb(255, 166, 0);
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.main-content main{
-    flex: 3 12.5em;
-}
-
-.main-content aside{
-    flex: 1 30%;
-}
-
-.img-hero{
-    max-width: 100%;
-    padding: 0px, 0px;
-    padding: 0px, 0px;
-    height: auto;
-    display: block;
-}
- nav{
-    background: rgb(255, 153, 0)
+nav{
+    background: rgb(255, 153, 0);
  }
 
  nav ul{
-    display: flex;
+    list-style-type: none;
     width: 100%;
+    display: flex;
     justify-content: space-around;
     padding: .2em;
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    flex-wrap: wrap;
+}
+
+nav li{
+    padding: .2em;
 }
 
 ul a{
@@ -61,19 +45,58 @@ ul a:hover{
     color: aliceblue;
 }
 
+.img-hero{
+    max-width: 100%;
+    padding: 0px, 0px;
+    padding: 0px, 0px;
+    height: auto;
+    display: block;
+}
+/* content------------------------ */
+
+.main-block{
+    background: white;
+    margin: 2em;
+}
+
+.main-content{
+    padding: 0px 1em;
+    display: flex;
+    width: 100%;
+    background: rgb(255, 166, 0);
+    flex-wrap: wrap;
+}
+
+.main-content main{
+    flex: 3 70%;
+}
+
+.main-content aside{
+    flex: 1 30%;
+}
+
+.img-munch{
+    align-self: center;
+}
+
+article{
+    max-width: 100%;
+}
+
+/* footer ----------------------------- */
+
 footer{
     background: black;
     color: goldenrod;
     text-align: center;
 }
 
-h1, h2, h3{
-    color: firebrick;
+footer p{
+    margin: 0px
 }
 
-h1{
-    text-align: center;
-    background: coral;
+h1, h2, h3{
+    color: firebrick;
 }
 
 h2,
@@ -96,4 +119,28 @@ h3{
 
 .item-img{
     max-width: 100%;
+}
+
+@media(max-width: 1024px) {
+    .main-block{
+        max-width: 100%;
+    }
+
+    body{
+        margin: 0px;
+    }
+}
+
+@media(max-width: 600px){
+    .main-block{
+        max-width: 100%;
+        width: 100%;
+        margin: .1em;
+    }
+}
+
+@media(min-width:1025px){
+    .main-block{
+        max-width: 80%
+    }
 }
