@@ -86,5 +86,14 @@ h3{
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1em;
+    flex-direction: row;
+}
+ 
+.flex-item{
+    max-width: 100%;
 }
 
+.item-img{
+    max-width: 100%;
+}
