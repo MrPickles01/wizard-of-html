@@ -18,14 +18,16 @@ body{
     display: flex;
     width: 100%;
     background: rgb(255, 166, 0);
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .main-content main{
-    flex: 3 200px;
+    flex: 3 70%;
 }
 
 .main-content aside{
-    flex: 1 100px;;
+    flex: 1 30%;
 }
 
 .div-img-hero{
